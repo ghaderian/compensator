@@ -1,1 +1,38 @@
-<p>signup works!</p>
+<h1>signup:</h1>
+
+
+
+<div class="form" *ngIf="!formSubmitted">
+    <div class="field">
+        <div class="title">نام</div>
+        <div class="value">
+            <input [(ngModel)]="name" type="text">
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="title">نام خانوادگی</div>
+        <div class="value">
+            <input [(ngModel)]="family" type="text">
+        </div>
+    </div>
+
+    <!-- todo:  ایمیل   phone -->
+
+
+    <div class="actions">
+        <button (click)="submit()">ارسال</button>
+    </div>
+
+</div>
+
+
+<div class="after-submit" *ngIf="formSubmitted">
+
+    <p>
+        ثبت نام شما با موفقیت انجام شد. تاریخ کلاس را به خاطر بسپارید. لینک شرکت در کلاس به آدرس ایمیل شما ارسال خواهد شد
+    </p>
+</div>
+
+
+<a [routerLink]="''">صفحه اصلی</a>
