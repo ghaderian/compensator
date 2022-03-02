@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gardoon-learning": {
+      "hosting": {
+        "compensator": [
+          "gardoon-learning"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "gardoon-learning"
+  }
+}

@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "compensator:build:production",
+            "firebaseProject": "gardoon-learning",
+            "firebaseHostingSite": "gardoon-learning"
+          }
         }
       }
     }
