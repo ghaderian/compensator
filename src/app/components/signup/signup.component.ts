@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestDocument } from 'src/app/core/model/request.document';
+import { RequestService } from 'src/app/core/request.service';
+import { RequestsComponent } from '../requests/requests.component';
 
 @Component({
   selector: 'app-signup',
@@ -15,9 +18,11 @@ export class SignupComponent implements OnInit {
   email = '';
   phone ='';
 
+  private service: RequestService
 
-
-  constructor() { }
+  constructor(service: RequestService) {
+    this.service = service;
+  }
 
   ngOnInit(): void {
 
@@ -26,6 +31,13 @@ export class SignupComponent implements OnInit {
 
   submit() {
 
+    const req: RequestDocument = {
+      email : this.email,
+      family: this.family,
+      name: this.name,
+      time: Date.now()
+    }
+    this.service.createRequst(req)
     this.formSubmitted = true;
   }
 

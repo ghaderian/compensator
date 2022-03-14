@@ -1,0 +1,7 @@
+
+
+<div class="list">
+    <div class="item" *ngFor="let r of (requests$ | async )" >
+        {{r?.name}} {{r?.family}} {{r?.email}} {{r?.time}}
+    </div>
+</div>
