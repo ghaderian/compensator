@@ -6,8 +6,20 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
+<body  class="container mx-auto px-4 bg-clip-border p-6 bg-gradient-to-r from-green-200 to-blue-200"">
   <app-root></app-root>
 </body>
 </html>

@@ -5,9 +5,14 @@ html {
     direction: rtl;
     display: flex;
     justify-content: center;
+@font-face {
+    font-family: 'vazir';
+    src: url(/src/font/Farsi-Digits/Vazir-Bold-FD.woff2);
+}
 
     body {
         max-width: 1000px;
         text-align: center;
+        font-family: 'vazir' ,sans-serif;
     }
 }

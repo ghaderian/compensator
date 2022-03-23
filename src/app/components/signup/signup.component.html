@@ -1,31 +1,46 @@
-<h1>signup:</h1>
+<h1 class="text-right text-3xl text-6xl">ثبت نام</h1>
 
+<br>
+<br>
+<br>
 
-
-<div class="form" *ngIf="!formSubmitted">
-    <div class="field">
+<div class=" flex w-full">
+<div class="form w-2/3 mt-16 " *ngIf="!formSubmitted">
+    <div class="field text-right py-2">
         <div class="title">نام</div>
         <div class="value">
-            <input [(ngModel)]="name" type="text">
+            <input [(ngModel)]="name" type="text" class="rounded-lg w-2/6 text-left border-2 border-teal-300" placeholder="Name">
         </div>
     </div>
 
-    <div class="field">
-        <div class="title">نام خانوادگی</div>
+    <div class="field text-right py-2">
+        <div class="title ">نام خانوادگی</div>
         <div class="value">
-            <input [(ngModel)]="family" type="text">
+            <input [(ngModel)]="family" type="text" class="rounded-lg w-2/6 text-left border-2 border-teal-300" placeholder="lastName">
+        </div>
+    </div>
+    <div class="field text-right py-2">
+        <div class="title">ایمیل</div>
+        <div class="value">
+            <input [(ngModel)]="email" type="text" class="rounded-lg w-2/6 text-left border-2 border-teal-300" placeholder="Email">
+        </div>
+    </div>
+    <div class="field text-right py-2">
+        <div class="title">موبایل</div>
+        <div class="value">
+            <input [(ngModel)]="phone" type="text" class="rounded-lg w-2/6 text-left border-2 border-teal-300" placeholder="phoneNumber">
         </div>
     </div>
 
-    <!-- todo:  ایمیل   phone -->
+    
 
 
     <div class="actions">
-        <button (click)="submit()">ارسال</button>
+        <button (click)="submit()" class="border-4 border-blue-300/75 rounded-2xl p-2 hover:bg-blue-300   ">ارسال</button>
     </div>
 
 </div>
-
+<div class="w-1/2 aspect-square bg-blue-300  rounded-xl " id="q">
 
 <div class="after-submit" *ngIf="formSubmitted">
 
@@ -34,5 +49,6 @@
     </p>
 </div>
 
-
-<a [routerLink]="''">صفحه اصلی</a>
+</div>
+</div>
+<a [routerLink]="''" class="border-4  border-blue-300/75 rounded-2xl p-2 hover:bg-blue-300  ">صفحه اصلی</a>
