@@ -13,6 +13,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { LoginComponent } from './components/login/login.component';
 import { RequestsComponent } from './components/requests/requests.component';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -30,9 +31,11 @@ import { RequestsComponent } from './components/requests/requests.component';
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore())
+    
   ],
   providers: [
-    ScreenTrackingService,UserTrackingService
+    ScreenTrackingService,UserTrackingService,
+    { provide: FIREBASE_OPTIONS, useValue: environment.firebase }
   ],
   bootstrap: [AppComponent]
 })
