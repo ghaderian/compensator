@@ -5,14 +5,15 @@ import firebase from 'firebase/compat/app'
 import {
   User,
 } from '@angular/fire/auth';
+import { CanActivate } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  // userData: Observable<firebase.User | null>;
-  // auth: Auth;
+  isAdmin = false;
+  admins = ['9cvm405xzqRNt44SrdJUi2N1eJ82'];
 
   currentUser: User | null = null ;
   private authStatusSub = new BehaviorSubject(this.currentUser);
@@ -28,7 +29,11 @@ export class AuthService {
       this.fireAuth.onAuthStateChanged((credential)=>{
       if(credential){
         console.log(credential);
-        //this.authStatusSub.next(credential);
+        console.log(credential.uid);
+
+        if (this.admins.some(s => s === credential.uid)) {
+          this.isAdmin = true;
+        }
         console.log('User is logged in');
       }
       else{
@@ -55,5 +60,22 @@ export class AuthService {
 
       this.fireAuth.signInWithRedirect(provider)
 
+  }
+}
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AdminAuthGuard implements CanActivate {
+
+
+  private authService: AuthService; 
+
+  constructor(_authService: AuthService ) {
+    this.authService = _authService;
+  }
+  canActivate() {
+    
+    return this.authService.isAdmin;
   }
 }

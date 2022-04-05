@@ -14,9 +14,11 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { LoginComponent } from './components/login/login.component';
 import { RequestsComponent } from './components/requests/requests.component';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { AdminAuthGuard } from './core/auth.service';
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     HomeComponent,
     SignupComponent,
@@ -34,7 +36,9 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
     
   ],
   providers: [
-    ScreenTrackingService,UserTrackingService,
+    ScreenTrackingService,
+    UserTrackingService,
+    AdminAuthGuard,
     { provide: FIREBASE_OPTIONS, useValue: environment.firebase }
   ],
   bootstrap: [AppComponent]
