@@ -15,6 +15,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RequestsComponent } from './components/requests/requests.component';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { AdminAuthGuard } from './core/auth.service';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { AdminAuthGuard } from './core/auth.service';
     SignupComponent,
     LoginComponent,
     RequestsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

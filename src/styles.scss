@@ -1,13 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 html {
-    direction: rtl;
+    
     display: flex;
     justify-content: center;
-@font-face {
-    font-family: 'vazir';
-    src: url(/src/font/Farsi-Digits/Vazir-Bold-FD.woff2);
 }
 
     body {
@@ -15,4 +11,3 @@ html {
         text-align: center;
         font-family: 'vazir' ,sans-serif;
     }
-}
