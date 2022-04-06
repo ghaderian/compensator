@@ -2,36 +2,91 @@
 
 
 
-    <div class="items flex justify-around mt-10 text-l ">
-        <div class="card  p-2 m-1  bg-teal-400 hover:text-white hover:border-white rounded-md">HTML</div>
-        <div class="card p-2 m-1 bg-teal-400 hover:text-white hover:border-white rounded-md">JAVASCRIPT</div>
-        <div class="card p-2  m-1 bg-teal-400 hover:text-white hover:border-white rounded-md">CSS</div>
-        <div class="card p-2 m-1 bg-teal-400 hover:text-white hover:border-white rounded-md">GIT</div>
-        <div class="card p-2 m-1 bg-teal-400 hover:text-white hover:border-white rounded-md">ANGULAR</div>
-    </div>
+  <!-- component -->
+  <div class="h-screen flex items-center justify-center">
 
-   <div class="text-xl mt-28"> <h3 >We help you start your journey to become a high paying programmer <br>Best way to learn programing is to learn it form programmers <br></h3></div>
-        <h3>Although most people think programming is very hard  and only the smartest people can do it , <br>Reality is programming is just a skill that anyone can master with the right traning and practice.</h3>
+    <div class="grid grid-cols-5 gap-2 ">
+
+      <!-- Item 1 -->
+      <div class="flex flex-col gap-1">
+
+        <!-- Image -->
+        
+          <img src="assets/image/html.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
+      </div>
+
+      <!-- Item 2 -->
+      <div class="flex flex-col gap-1">
+
+        <!-- Image -->
+       
+          <img src="assets/image/css.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100" />
+
+
+      </div>
+
+      <!-- Item 3 -->
+      <div class="flex flex-col gap-1">
+
+        <!-- Image -->
+    
+          <img src="assets/image/js.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100" />
+       
 
     
 
+      </div>
 
-    <h4 class="mt-10">Sign up for our free monthly induction classes</h4>
+      <!-- Item 4 -->
+      <div class="flex flex-col gap-1">
+
+        <!-- Image -->
+       
+          <img src="assets/image/git.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100" />
+     
+
+       
+
+      </div>
+
+      <!-- Item 5 -->
+      <div class="flex flex-col gap-1">
+
+
+        
+          <img src="assets/image/angular.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-100" />
+      
+
+
+       
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="text-xl ">
+    <h3>We help you start your journey to become a high paying programmer <br>Best way to learn programing is to learn
+      it form programmers <br></h3>
+  </div>
+  <h3>Although most people think programming is very hard and only the smartest people can do it , <br>Reality is
+    programming is just a skill that anyone can master with the right traning and practice.</h3>
+
+
+
+
+  <h4 >Sign up for our free monthly induction classes</h4>
 </div>
 
 
 
 
 <div class="flex justify-around">
-<a class="signup" [routerLink]="'signup'">sign up</a>
+  <a class="signup" [routerLink]="'signup'">sign up</a>
 
-<a class="signup" [routerLink]="'login'">login</a>
+  <a class="signup" [routerLink]="'login'">login</a>
 </div>
-<br/>
+<br />
 
 <a [routerLink]="'admin/requests'">Admin</a>
-
-
-
-
-
