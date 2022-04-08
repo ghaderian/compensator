@@ -8,54 +8,65 @@
     <div class="grid grid-cols-5 gap-2 mt-8">
 
       <!-- Item 1 -->
-      
-        <img src="assets/image/html.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
-        <img src="assets/image/css.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
-        <img src="assets/image/js.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
-        <img src="assets/image/git.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
-        <img src="assets/image/angular.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
-      </div>
 
+      <img src="assets/image/html.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
+      <img src="assets/image/css.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
+      <img src="assets/image/js.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
+      <img src="assets/image/git.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
+      <img src="assets/image/angular.png" class="hover:translate-x-1 hover:-translate-y-1 delay-50 duration-150" />
     </div>
-      <div class="text-xl ">
-        <h3>We help you start your journey to become a high paying programmer <br>Best way to learn programing is to
-          learn it form programmers <br></h3>
-        <h3>Although most people think programming is very hard and only the smartest people can do it , <br>Reality is
-          programming is just a skill that anyone can master with the right traning and practice.</h3>
+
+  </div>
+  <figure class="max-w-full md:flex bg-slate-100 rounded-xl p-8 md:p-0  ">
+    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="assets/image/boss.jpg" alt=""
+     >
+    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+      <blockquote>
+        <p class="text-lg font-medium">
+          We help you start your journey to become a high paying programmer Best way to learn programing is to
+  learn it form programmers
+  Although most people think programming is very hard and only the smartest people can do it , Reality is
+  programming is just a skill that anyone can master with the right traning and practice.
+  Learn in demand skills through a market-driven curriculum
+
+  Web development is one of the fastest-growing careers in today’s economy. ICT workforce in Australia is
+  expected to grow significantly
+
+  We help you start your journey to become a high paying programmer Best way to learn programing is to
+  learn
+  it form programmers
+  Although most people think programming is very hard and only the smartest people can do it , Reality is
+  programming is just a skill that anyone can master with the right traning and practice.
 
 
-
-
-        <h6>Learn in demand skills through a market-driven curriculum</h6>
-
-        <h6>Web development is one of the fastest-growing careers in today’s economy. ICT workforce in Australia is
-          expected to grow significantly</h6>
-
-
-        <div class="text-xl ">
-          <h3>We help you start your journey to become a high paying programmer <br>Best way to learn programing is to
-            learn
-            it form programmers <br></h3>
+        </p>
+      </blockquote>
+      <figcaption class="font-medium">
+        <div class="text-sky-500 dark:text-sky-400">
+        houman ghaderian
         </div>
-        <h3>Although most people think programming is very hard and only the smartest people can do it , <br>Reality is
-          programming is just a skill that anyone can master with the right traning and practice.</h3>
+        <div class="text-slate-700 dark:text-slate-500">
+          Staff Engineer, sydney
+        </div>
+      </figcaption>
+    </div>
+  </figure>
+
+  
+
+
+  <h4>Sign up for our free monthly induction classes</h4>
 
 
 
 
-        <h4>Sign up for our free monthly induction classes</h4>
-      </div>
 
+  <div class="flex justify-around">
+    <a class="signup" [routerLink]="'signup'">sign up</a>
 
+    <a class="signup" [routerLink]="'login'">login</a>
+  </div>
 
+  <br />
 
-      <div class="flex justify-around">
-        <a class="signup" [routerLink]="'signup'">sign up</a>
-
-        <a class="signup" [routerLink]="'login'">login</a>
-      </div>
-
-      <br />
-
-      <a [routerLink]="'admin/requests'">Admin</a>
-    
+  <a [routerLink]="'admin/requests'">Admin</a>
