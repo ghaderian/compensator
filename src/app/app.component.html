@@ -1,7 +1,8 @@
 <app-header></app-header>
 <button (click)="modalService.open('modal-1')" class="border-2  border-[#1da1f2] mt-4">open modal</button>
 <jw-modal id="modal-1">
-  
-    <button (click)="modalService.close('modal-1')" class="border-2  border-[#1da1f2] mt-4">close modal</button>
+  text
+  text
+    <button (click)="modalService.close('modal-1')" id="close">X</button>
 </jw-modal>
 <router-outlet></router-outlet>
