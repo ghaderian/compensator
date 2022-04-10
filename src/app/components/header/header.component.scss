@@ -1,0 +1,16 @@
+.bar {
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius:  0 0 4px 4px;
+
+    .logo {
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        margin: 0px 10px 0px 20px;
+    }
+
+}
