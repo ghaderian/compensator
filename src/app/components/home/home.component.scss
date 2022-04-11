@@ -30,3 +30,114 @@
     }
 
 }
+
+.modal {
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    .modal-bg {
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background-color: #000000;
+        opacity: 0.4;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+
+    }
+    
+    .box {
+        background-color: #fff;
+        max-width: 400px;
+        width: 80%;
+        z-index: 6;
+        border-radius: 3px;
+        box-shadow: 7px 6px 15px -1px rgb(0 0 0 / 24%);
+    
+        display: flex;
+        flex-direction: column;
+
+        .close {
+            width: 20px;
+            height: 20px;
+            align-self: end;
+            margin: 5px;
+        }
+
+        .content {
+            padding: 0 10px;
+            text-align: left;
+
+            .heading {
+                padding-bottom: 10px;
+            }
+
+            .email {
+
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10px;
+                .data{
+    
+                    display: flex;
+    
+                    .label {
+    
+                    }
+    
+                    .input {
+                        flex-grow: 1;
+                        margin: 0px 5px;
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+    
+                .validation {
+                    color: #d10202;
+                    padding-bottom: 10px;
+                }
+
+            }
+
+            .info {
+
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10px;
+                .session {
+
+                    .label {
+                        font-size: .9em;
+                        padding-bottom: 10px;
+                    }
+                    .data {
+                        font-size: 1.4em;
+                        font-style: italic;
+                        font-weight: bold;
+                    }
+                    .more {
+                        font-size: .9em;
+                        font-weight: bold;
+                        text-decoration: underline;
+                        text-align: right;
+                    }
+
+                }
+            }
+        }
+    }
+}
+

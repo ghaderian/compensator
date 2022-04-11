@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  isModalOpen = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  closeModal() {
+    this.isModalOpen = false;
   }
 
 }
