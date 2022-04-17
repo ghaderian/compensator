@@ -42,6 +42,31 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+    transition: visibility 0s, opacity 0.5s ease-in;
+    opacity: 0;
+
+    &.hide {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &.fade-in {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &.fade-out {
+        opacity: 0;
+    }
+
+
+
+
 
     .modal-bg {
         width: 100%;
@@ -52,7 +77,6 @@
         position: fixed;
         top: 0;
         left: 0;
-
 
     }
     
@@ -72,6 +96,7 @@
             height: 20px;
             align-self: end;
             margin: 5px;
+            cursor: pointer;
         }
 
         .content {
@@ -121,12 +146,12 @@
 
                     .label {
                         font-size: .9em;
-                        padding-bottom: 10px;
                     }
                     .data {
-                        font-size: 1.4em;
+                        font-size: 1.1em;
                         font-style: italic;
                         font-weight: bold;
+                        padding: 15px 4px;
                     }
                     .more {
                         font-size: .9em;
@@ -135,6 +160,16 @@
                         text-align: right;
                     }
 
+                   
+
+                }
+            }
+
+            .actions {
+                padding: 10px 0;
+
+                button {
+                    margin-right: 10px;
                 }
             }
         }

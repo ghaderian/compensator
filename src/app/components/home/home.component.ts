@@ -7,16 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  isModalOpen = true;
+  isModalOpen = false;
+  fadeIn = false;
+  fadeOut = false;
+
+  modalState: 'fade-in' | 'fade-out' | 'visible' | 'hidden' = 'hidden'
 
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+
+  showModal() {
+    this.modalState = 'fade-in'
+    setTimeout(() => {
+      this.modalState = 'visible'
+    },1000);
   }
 
 
   closeModal() {
-    this.isModalOpen = false;
+    this.modalState = 'fade-out'
+    setTimeout(() => {
+      this.modalState = 'hidden'
+    },1000);
   }
 
 }
