@@ -53,10 +53,10 @@
                 <div class="data">
                     <div class="label">Email:</div>
                     <div class="input">
-                        <input type="text" autocomplete="email" >
+                        <input type="text"  [(ngModel)]="email" autocomplete="email" >
                     </div>
                 </div>
-                <div class="validation" hidden="true">
+                <div class="validation" [hidden]="isEmailValid">
                     valid email please
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="actions">
-                <button (click)="closeModal()">OK</button>
+                <button (click)="submit()">OK</button>
                 <button (click)="closeModal()">CANCEL</button>
             </div>
         </div>
