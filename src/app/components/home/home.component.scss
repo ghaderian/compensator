@@ -1,20 +1,70 @@
+$breakpoint-tablet: 768px;
+
 .context {
+
+
+    .hero {
+        text-align: left;
+        margin: 50px 30px;
+
+        h1 {    
+            margin: 0 ;
+            font-size: 1.7em;
+            padding-top: 10px;
+            line-height: 1.5em;
+        }
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+
+    .info {
+        text-align: left;
+        background-color: #d3f3f1;
+        border-radius: 4px;
+        padding: 15px 10px;
+        margin: 0 10px;
+
+        @media (max-width: $breakpoint-tablet) {
+            margin: 10px;
+        }
+
+        .heading {
+            img {
+                width: 15px;
+                height: 15px;
+            }
+
+            font-weight: bold;
+            padding-bottom: 7px;
+            padding-left: 25px;
+        }
+
+        .desc {
+            padding-left: 25px;
+            font-size: 13px;
+            text-align: justify;
+            padding-right: 10px;
+            line-height: 21px;
+        }
+
+    }
 
     .row {
         width: 100%;
         .col {
             width: 50%;
+
+            @media (max-width: $breakpoint-tablet) {
+                width: 100%;
+            }
         }
     }
 
 
-    h1 {
-        text-align: left;
-        margin: 0 10px;
-        font-size: 1.7em;
-        padding-top: 10px;
-        line-height: 1.5em;
-    }
+
 
     p {
         text-align: left;
