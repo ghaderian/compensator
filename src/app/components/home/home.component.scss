@@ -54,11 +54,21 @@ $breakpoint-tablet: 768px;
 
     .row {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
         .col {
             width: 50%;
 
             @media (max-width: $breakpoint-tablet) {
                 width: 100%;
+            }
+
+
+            .whole-img {
+                width: 100%;
+                padding: 25px;
+                box-sizing: border-box;
             }
         }
     }
@@ -68,13 +78,15 @@ $breakpoint-tablet: 768px;
 
     p {
         text-align: left;
-        margin: 20px 10px;
+        margin: 11px 20px;
+        font-size: 13px;
+        line-height: 23px;
     }
 
 
     h2 {
         text-align: left;
-        margin: 0 10px;
+        margin: 0 20px;
         font-size: 0.9em;
         padding-top: 10px;
         line-height: 1.4em;
