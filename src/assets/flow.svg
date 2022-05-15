@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 212.234 494.97 77.14" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="Anaheim">@import url(https://fonts.googleapis.com/css2?family=Anaheim%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+    <bx:grid x="0.483" y="13.874" width="10.521" height="11.02"/>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, -6.619, -0.330994)">
+    <text style="fill: rgb(51, 51, 51); font-family: Anaheim; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(1, 0, 0, 1, 28.660431, 48.999313)"><tspan x="42.737" y="197.201">Learn web development </tspan><tspan x="42.73699951171875" dy="1.4em">​</tspan><tspan>and gain skills</tspan></text>
+    <rect style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0);" x="11.619" y="232.392" width="119.137" height="35" rx="5" ry="5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 8, 0)">
+    <text style="fill: rgb(51, 51, 51); font-family: Anaheim; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" transform="matrix(1, 0, 0, 1, 182.432877, 48.895325)" x="42.73699951171875" y="197.2010040283203">Find your first job in ICT industry<tspan x="42.73699951171875" dy="1.4em">​</tspan>as web developer</text>
+    <rect style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0);" x="147.464" y="232.061" width="157" height="35" rx="5" ry="5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2, 9)">
+    <text style="fill: rgb(51, 51, 51); font-family: Anaheim; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="420.566" y="225.583">Grow to other coding positions</text>
+    <rect style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0);" x="349.952" y="213.254" width="140" height="20" rx="5" ry="5"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 2, 7)">
+    <text style="fill: rgb(51, 51, 51); font-family: Anaheim; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="420.566" y="268.454">Grow to non coding ICT roles</text>
+    <rect style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0);" x="350.566" y="255.306" width="140" height="20" rx="5" ry="5"/>
+  </g>
+  <g>
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); paint-order: fill;" d="M 124.667 250.418 L 155.667 250.611"/>
+    <path d="M 132.909 73.256 L 135.909 89.256 L 129.909 89.256 L 132.909 73.256 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;" transform="matrix(-0.000001, 1, -1, -0.000001, 229.492111, 117.694572)" bx:shape="triangle 129.909 73.256 6 16 0.5 0 1@3808de5e"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 196.509995, -18.603485)" bx:origin="0.512781 0.5">
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); paint-order: fill;" d="M 131.49 250.418 L 152.513 250.651"/>
+    <path d="M 132.909 73.256 L 135.909 89.256 L 129.909 89.256 L 132.909 73.256 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;" transform="matrix(-0.000001, 1, -1, -0.000001, 229.492111, 117.694572)" bx:shape="triangle 129.909 73.256 6 16 0.5 0 1@3808de5e"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 196.463303, 20.804636)">
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); paint-order: fill;" d="M 131.49 250.418 L 152.513 250.651"/>
+    <path d="M 132.909 73.256 L 135.909 89.256 L 129.909 89.256 L 132.909 73.256 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;" transform="matrix(-0.000001, 1, -1, -0.000001, 229.492111, 117.694572)" bx:shape="triangle 129.909 73.256 6 16 0.5 0 1@3808de5e"/>
+  </g>
+  <path style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0);" d="M 329.578 231.861 C 314.827 231.596 331.559 248.242 312.578 248.01" bx:origin="0.495412 0.5"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0);" d="M 329.742 271.165 C 314.991 271.43 331.723 254.784 312.742 255.016" bx:origin="0.495412 0.5"/>
+</svg>
