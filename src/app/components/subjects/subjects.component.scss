@@ -1,0 +1,37 @@
+.context {
+    text-align: left;
+
+    .goal {
+        .ghead {
+          font-size: 15px;
+          font-weight: bold;
+          padding: 10px;
+          letter-spacing: 1px;
+  
+  
+          i.active {
+            transform: rotate(90deg);
+            transition: 0.85s cubic-bezier(0,1,0,1) transform;
+          }
+        }
+  
+        .desc {
+  
+          padding: 0px 10px;
+          max-height: 0px;
+          overflow: hidden;
+          transition: max-height 0.85s cubic-bezier(0,1,0,1);
+          font-size: 16px;
+          line-height: 28px;
+          text-align: justify;
+          margin-bottom: 12px;
+  
+  
+          &.active {
+             max-height: 600px;
+          }
+        }
+      }
+}
+
+   

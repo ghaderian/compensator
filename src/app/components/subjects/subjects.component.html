@@ -1,0 +1,10 @@
+<div class="context">
+    <h1>Subjects we go through in our classes:</h1>
+    <div class="goal" *ngFor="let g of goals; let i=index">
+      <h5 class="ghead" (click)="toggleGoalView(i)" >
+        <i [ngClass]="isGoalVisible(i) ? 'active' : ''" class="fas fa-chevron-circle-right"></i>
+        {{g.title}}
+      </h5>
+      <p [ngClass]="isGoalVisible(i) ? 'active' : ''" class="desc text-theme-color" [innerHTML]="g.desc"></p>
+    </div>
+</div>
