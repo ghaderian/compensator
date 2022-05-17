@@ -10,7 +10,8 @@ export class SubjectsComponent implements OnInit {
   goals = [
     {
       title: `Javascript`,
-      desc: `JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web`,
+      desc: `JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web.<br/>
+      Unlike most javascript classes, In our class, we go through an stream of interactive javascript challenges from easy to hard, so that you can earn confidence writing code.  `,
     },
     {
       title: `HTML/CSS`,

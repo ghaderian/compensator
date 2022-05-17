@@ -7,11 +7,24 @@
           font-weight: bold;
           padding: 10px;
           letter-spacing: 1px;
+          display: flex;
+          margin: 0;
+          border-bottom: 1px solid #efefef;
   
-  
-          i.active {
-            transform: rotate(90deg);
-            transition: 0.85s cubic-bezier(0,1,0,1) transform;
+          i {
+            display: flex;
+            justify-content: center;
+
+            &.active {
+                transform: rotate(90deg);
+                transition: 0.85s cubic-bezier(0,1,0,1) transform;
+            }
+
+            img {
+                width: 16px;
+                margin-right: 5px;
+                height: 16px;
+            }
           }
         }
   
